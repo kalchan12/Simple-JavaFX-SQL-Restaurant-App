@@ -1,0 +1,872 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login.Dishes">
+   <children>
+      <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Burger">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #f1f3f6;">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="31.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Beefburger.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="31.0" layoutY="46.0" prefHeight="17.0" prefWidth="129.0" text="Beef Burger" textFill="#0d7eb3">
+                           <font>
+                              <Font name="Mongolian Baiti" size="24.0" />
+                           </font></Label>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="516.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Cheeseburger.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="31.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Humburger.jpg" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="31.0" layoutY="210.0" mnemonicParsing="false" onAction="#Payment" prefHeight="33.0" prefWidth="199.0" style="-fx-background-color: orange;" text="Order Now" textFill="#479ff5">
+                           <font>
+                              <Font name="Bauhaus 93" size="19.0" />
+                           </font></Button>
+                        <Button layoutX="31.0" layoutY="433.0" mnemonicParsing="false" onAction="#Payment" prefHeight="33.0" prefWidth="199.0" style="-fx-background-color: orange;" text="Order Now" textFill="#479ff5">
+                           <font>
+                              <Font name="Bauhaus 93" size="19.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="516.0" layoutY="210.0" mnemonicParsing="false" onAction="#Payment" prefHeight="33.0" prefWidth="199.0" style="-fx-background-color: orange;" text="Order Now" textFill="#479ff5">
+                           <font>
+                              <Font name="Bauhaus 93" size="19.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="31.0" layoutY="271.0" prefHeight="17.0" prefWidth="129.0" text="Hamburger" textFill="#0d7eb3">
+                           <font>
+                              <Font name="Mongolian Baiti" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="516.0" layoutY="46.0" prefHeight="28.0" prefWidth="159.0" text="Cheese Burger" textFill="#0d7eb3">
+                           <font>
+                              <Font name="Mongolian Baiti" size="24.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="231.0" layoutY="72.0" prefHeight="174.0" prefWidth="200.0" style="-fx-background-color: #f1f3f6; -fx-border-color: orange;">
+                           <children>
+                              <Label layoutX="2.0" layoutY="7.0" text="Welcome to Ethio-Food Delivery" textFill="#0a76f7" underline="true">
+                                 <font>
+                                    <Font name="Cooper Black" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="34.0" prefHeight="14.0" prefWidth="179.0" text="&gt; If you Order 1 Beef Burger">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="11.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="36.0" layoutY="48.0" prefHeight="14.0" prefWidth="142.0" text="Price = 250 birr">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="11.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="10.0" layoutY="62.0" prefHeight="14.0" prefWidth="192.0" text="&gt; If you Order 2&gt; Beef Burger">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="11.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="35.0" layoutY="80.0" prefHeight="14.0" prefWidth="117.0" text="20% discount">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="11.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="10.0" layoutY="95.0" prefHeight="20.0" prefWidth="170.0" text="&gt; Delivery Fee">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="11.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="35.0" layoutY="115.0" prefHeight="14.0" prefWidth="117.0" text="60 birr">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="11.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="9.0" layoutY="129.0" prefHeight="20.0" prefWidth="170.0" text="For further informstion">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="11.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="35.0" layoutY="153.0" prefHeight="14.0" prefWidth="150.0" text="Call us At 09000000">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="11.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="231.0" layoutY="300.0" prefHeight="174.0" prefWidth="200.0" style="-fx-background-color: #f1f3f6; -fx-border-color: orange;">
+                           <children>
+                              <Label layoutX="2.0" layoutY="7.0" text="Welcome to Ethio-Food Delivery" textFill="#0a76f7" underline="true">
+                                 <font>
+                                    <Font name="Cooper Black" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="34.0" prefHeight="14.0" prefWidth="179.0" text="&gt; If you Order 1 HamBurger">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="11.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="36.0" layoutY="48.0" prefHeight="14.0" prefWidth="142.0" text="Price = 300 birr">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="11.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="10.0" layoutY="62.0" prefHeight="14.0" prefWidth="192.0" text="&gt; If you Order 2&gt; Beef Burger">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="11.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="35.0" layoutY="80.0" prefHeight="14.0" prefWidth="117.0" text="20% discount">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="11.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="35.0" layoutY="115.0" prefHeight="14.0" prefWidth="117.0" text="60 birr">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="11.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="9.0" layoutY="129.0" prefHeight="20.0" prefWidth="170.0" text="For further informstion">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="11.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="35.0" layoutY="153.0" prefHeight="14.0" prefWidth="150.0" text="Call us At 09000000">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="11.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="22.0" layoutY="94.0" prefHeight="20.0" prefWidth="170.0" text="&gt; Delivery Fee">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="11.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="715.0" layoutY="72.0" prefHeight="174.0" prefWidth="200.0" style="-fx-background-color: #f1f3f6; -fx-border-color: orange;">
+                           <children>
+                              <Label layoutX="2.0" layoutY="7.0" text="Welcome to Ethio-Food Delivery" textFill="#0a76f7" underline="true">
+                                 <font>
+                                    <Font name="Cooper Black" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="34.0" prefHeight="14.0" prefWidth="179.0" text="&gt; If you Order 1 Beef Burger">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="11.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="36.0" layoutY="48.0" prefHeight="14.0" prefWidth="142.0" text="Price = 250 birr">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="11.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="10.0" layoutY="62.0" prefHeight="14.0" prefWidth="192.0" text="&gt; If you Order 2&gt; Beef Burger">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="11.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="35.0" layoutY="80.0" prefHeight="14.0" prefWidth="117.0" text="20% discount">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="11.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="10.0" layoutY="95.0" prefHeight="20.0" prefWidth="170.0" text="&gt; Delivery Fee">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="11.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="35.0" layoutY="115.0" prefHeight="14.0" prefWidth="117.0" text="60 birr">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="11.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="9.0" layoutY="129.0" prefHeight="20.0" prefWidth="170.0" text="For further informstion">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="11.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="35.0" layoutY="153.0" prefHeight="14.0" prefWidth="150.0" text="Call us At 09000000">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="11.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <ImageView fitHeight="33.0" fitWidth="33.0" layoutX="5.0" layoutY="9.0" onMouseClicked="#MouseOnClickedBackward" pickOnBounds="true" preserveRatio="true" rotate="176.8">
+                           <image>
+                              <Image url="@softdrinks/iIcons/backward.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Drinks">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="180.0" layoutX="37.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@softdrinks/coka.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="131.0" fitWidth="112.0" layoutX="264.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@softdrinks/sprite.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="131.0" fitWidth="169.0" layoutX="37.0" layoutY="301.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@softdrinks/fanta.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="88.0" fitWidth="98.0" layoutX="275.0" layoutY="314.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@softdrinks/pepsi.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="64.0" layoutY="65.0" prefHeight="26.0" prefWidth="119.0" text="Coka Cola" textFill="#0d7eb3">
+                           <font>
+                              <Font name="Mongolian Baiti" size="20.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="64.0" layoutY="202.0" mnemonicParsing="false" onAction="#Payment" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: orange;" text="Order Now" textFill="#479ff5">
+                           <font>
+                              <Font name="Bauhaus 93" size="15.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="86.0" layoutY="285.0" prefHeight="26.0" prefWidth="71.0" text="Fanta" textFill="#0d7eb3">
+                           <font>
+                              <Font name="Mongolian Baiti" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="292.0" layoutY="65.0" prefHeight="26.0" prefWidth="73.0" text="Sprite" textFill="#0d7eb3">
+                           <font>
+                              <Font name="Mongolian Baiti" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="293.0" layoutY="288.0" prefHeight="26.0" prefWidth="71.0" text="Pepsi" textFill="#0d7eb3">
+                           <font>
+                              <Font name="Mongolian Baiti" size="20.0" />
+                           </font>
+                        </Label>
+                        <Circle fill="#fbfdff" layoutX="195.0" layoutY="166.0" opacity="0.72" radius="36.0" stroke="#ffa406" strokeType="INSIDE" strokeWidth="2.0" />
+                        <Label layoutX="164.0" layoutY="158.0" prefHeight="17.0" prefWidth="60.0" rotate="-26.6" text="30 birr" textFill="#1288f6">
+                           <font>
+                              <Font name="Bodoni MT Black Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <Circle fill="#fbfdff" layoutX="206.0" layoutY="364.0" opacity="0.72" radius="36.0" stroke="#ffa406" strokeType="INSIDE" strokeWidth="2.0" />
+                        <Label layoutX="176.0" layoutY="355.0" prefHeight="17.0" prefWidth="60.0" rotate="-32.0" text="30 birr" textFill="#1288f6">
+                           <font>
+                              <Font name="Bodoni MT Black Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="81.0" layoutY="399.0" mnemonicParsing="false" onAction="#Payment" prefHeight="29.0" prefWidth="94.0" style="-fx-background-color: orange;" text="Order Now" textFill="#479ff5">
+                           <font>
+                              <Font name="Bauhaus 93" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="272.0" layoutY="202.0" mnemonicParsing="false" onAction="#Payment" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: orange;" text="Order Now" textFill="#479ff5">
+                           <font>
+                              <Font name="Bauhaus 93" size="15.0" />
+                           </font>
+                        </Button>
+                        <Circle fill="#fbfdff" layoutX="387.0" layoutY="153.0" opacity="0.72" radius="36.0" stroke="#ffa406" strokeType="INSIDE" strokeWidth="2.0" />
+                        <Label layoutX="357.0" layoutY="144.0" prefHeight="17.0" prefWidth="60.0" text="30 birr" textFill="#1288f6">
+                           <font>
+                              <Font name="Bodoni MT Black Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <Circle fill="#fbfdff" layoutX="409.0" layoutY="364.0" opacity="0.72" radius="36.0" stroke="#ffa406" strokeType="INSIDE" strokeWidth="2.0" />
+                        <Button layoutX="274.0" layoutY="399.0" mnemonicParsing="false" onAction="#Payment" prefHeight="29.0" prefWidth="99.0" style="-fx-background-color: orange;" text="Order Now" textFill="#479ff5">
+                           <font>
+                              <Font name="Bauhaus 93" size="15.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="32.0" fitWidth="35.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#MouseOnClickedBackward" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                           <image>
+                              <Image url="@softdrinks/iIcons/backward.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Pizza">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #f1f3f6;">
+                     <children>
+                        <ImageView fitHeight="124.0" fitWidth="179.0" layoutX="46.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@beefpizza.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="133.0" fitWidth="187.0" layoutX="42.0" layoutY="317.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@tunapizza.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="46.0" layoutY="48.0" text="Beef Pizza" textFill="#0d7eb3">
+                           <font>
+                              <Font name="Mongolian Baiti" size="23.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="120.0" fitWidth="185.0" layoutX="544.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@cheesepizza.jpg" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="46.0" layoutY="193.0" mnemonicParsing="false" onAction="#Payment" prefHeight="25.0" prefWidth="180.0" style="-fx-background-color: orange;" text="Order Now" textFill="#0b81ff">
+                           <font>
+                              <Font name="Bauhaus 93" size="22.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="44.0" layoutY="442.0" mnemonicParsing="false" onAction="#Payment" prefHeight="40.0" prefWidth="185.0" style="-fx-background-color: orange;" text="Order Now" textFill="#0b81ff">
+                           <font>
+                              <Font name="Bauhaus 93" size="22.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="544.0" layoutY="48.0" text="Cheese Pizza" textFill="#0d7eb3">
+                           <font>
+                              <Font name="Mongolian Baiti" size="23.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="544.0" layoutY="193.0" mnemonicParsing="false" onAction="#Payment" prefHeight="40.0" prefWidth="166.0" style="-fx-background-color: orange;" text="Order Now" textFill="#0b81ff">
+                           <font>
+                              <Font name="Bauhaus 93" size="22.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="44.0" layoutY="285.0" text="Tuna Pizza" textFill="#0d7eb3">
+                           <font>
+                              <Font name="Mongolian Baiti" size="23.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="226.0" layoutY="73.0" prefHeight="165.0" prefWidth="211.0" style="-fx-background-color: #f1f3f6; -fx-border-color: orange;">
+                           <children>
+                              <Label layoutX="11.0" layoutY="6.0" text="Welcome to Ethio-Food delivey" textFill="#0a76f7" underline="true">
+                                 <font>
+                                    <Font name="Arial Rounded MT Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="11.0" layoutY="29.0" text="&gt; If you order Beef Pizza" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="36.0" layoutY="43.0" text="Price 300 birr" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="11.0" layoutY="57.0" prefHeight="17.0" prefWidth="196.0" text="&gt; If you order 2 or more Beef Pizza" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="47.0" layoutY="76.0" text="20 % discount" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="36.0" layoutY="97.0" prefHeight="14.0" prefWidth="105.0" text="&gt; Delivery Fee" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="57.0" layoutY="111.0" prefHeight="14.0" prefWidth="105.0" text="60 birr" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="17.0" layoutY="125.0" text="&gt; For further info " textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="27.0" layoutY="135.0" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="30.0" layoutY="142.0" text="Call us at 09191818" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="226.0" layoutY="317.0" prefHeight="165.0" prefWidth="211.0" style="-fx-background-color: #f1f3f6; -fx-border-color: orange;">
+                           <children>
+                              <Label layoutX="11.0" layoutY="6.0" text="Welcome to Ethio-Food delivey" textFill="#0a76f7" underline="true">
+                                 <font>
+                                    <Font name="Arial Rounded MT Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="11.0" layoutY="29.0" text="&gt; If you order Tuna Pizza" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="36.0" layoutY="43.0" text="Price 250 birr" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="11.0" layoutY="57.0" prefHeight="17.0" prefWidth="196.0" text="&gt; If you order 2 or more Beef Pizza" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="47.0" layoutY="76.0" text="20 % discount" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="36.0" layoutY="97.0" prefHeight="14.0" prefWidth="105.0" text="&gt; Delivery Fee" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="57.0" layoutY="111.0" prefHeight="14.0" prefWidth="105.0" text="60 birr" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="17.0" layoutY="125.0" text="&gt; For further info " textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="27.0" layoutY="135.0" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="30.0" layoutY="142.0" text="Call us at 09191818" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="710.0" layoutY="75.0" prefHeight="161.0" prefWidth="211.0" style="-fx-background-color: #f1f3f6; -fx-border-color: orange;">
+                           <children>
+                              <Label layoutX="11.0" layoutY="6.0" text="Welcome to Ethio-Food delivey" textFill="#0a76f7" underline="true">
+                                 <font>
+                                    <Font name="Arial Rounded MT Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="12.0" layoutY="29.0" text="&gt; If you order Cheese Pizza" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="36.0" layoutY="43.0" text="Price 300 birr" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="11.0" layoutY="57.0" prefHeight="17.0" prefWidth="196.0" text="&gt; If you order 2 or more Beef Pizza" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="47.0" layoutY="76.0" text="20 % discount" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="36.0" layoutY="97.0" prefHeight="14.0" prefWidth="105.0" text="&gt; Delivery Fee" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="57.0" layoutY="111.0" prefHeight="14.0" prefWidth="105.0" text="60 birr" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="17.0" layoutY="125.0" text="&gt; For further info " textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="27.0" layoutY="135.0" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="30.0" layoutY="142.0" text="Call us at 09191818" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <ImageView fitHeight="33.0" fitWidth="31.0" layoutX="7.0" layoutY="9.0" onMouseClicked="#MouseOnClickedBackward" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                           <image>
+                              <Image url="@softdrinks/iIcons/backward.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Sandwitch">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #f1f3f6;">
+                     <children>
+                        <ImageView fitHeight="133.0" fitWidth="192.0" layoutX="27.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Foods/Club-sandwich.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="138.0" fitWidth="181.0" layoutX="30.0" layoutY="303.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Foods/Margherita-Cheese-Sandwich.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="146.0" fitWidth="188.0" layoutX="487.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Foods/Turkey-Sandwich.jpg" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="26.0" layoutY="203.0" mnemonicParsing="false" onAction="#Payment" prefHeight="25.0" prefWidth="180.0" style="-fx-background-color: orange;" text="Order Now" textFill="#0b81ff">
+                           <font>
+                              <Font name="Bauhaus 93" size="22.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="30.0" layoutY="439.0" mnemonicParsing="false" onAction="#Payment" prefHeight="25.0" prefWidth="180.0" style="-fx-background-color: orange;" text="Order Now" textFill="#0b81ff">
+                           <font>
+                              <Font name="Bauhaus 93" size="22.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="486.0" layoutY="199.0" mnemonicParsing="false" onAction="#Payment" prefHeight="40.0" prefWidth="189.0" style="-fx-background-color: orange;" text="Order Now" textFill="#0b81ff">
+                           <font>
+                              <Font name="Bauhaus 93" size="22.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="30.0" layoutY="44.0" text="Club Sandwich" textFill="#0d7eb3">
+                           <font>
+                              <Font name="Mongolian Baiti" size="23.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="34.0" layoutY="273.0" text="Margherita Sandwich" textFill="#0d7eb3">
+                           <font>
+                              <Font name="Mongolian Baiti" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="487.0" layoutY="44.0" text="Turkey Sandwich" textFill="#0d7eb3">
+                           <font>
+                              <Font name="Mongolian Baiti" size="23.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="204.0" layoutY="70.0" prefHeight="172.0" prefWidth="229.0" style="-fx-background-color: #f1f3f6; -fx-border-color: orange;">
+                           <children>
+                              <Label layoutX="11.0" layoutY="6.0" text="Welcome to Ethio-Food delivey" textFill="#0a76f7" underline="true">
+                                 <font>
+                                    <Font name="Arial Rounded MT Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="11.0" layoutY="29.0" text="&gt; If you order Club Sandwich" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="36.0" layoutY="43.0" text="Price 300 birr" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="3.0" layoutY="57.0" prefHeight="17.0" prefWidth="224.0" text="&gt; If you order 2 or more Club Sandwich" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="47.0" layoutY="76.0" text="20 % discount" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="36.0" layoutY="97.0" prefHeight="14.0" prefWidth="105.0" text="&gt; Delivery Fee" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="57.0" layoutY="111.0" prefHeight="14.0" prefWidth="105.0" text="60 birr" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="17.0" layoutY="125.0" text="&gt; For further info " textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="27.0" layoutY="135.0" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="30.0" layoutY="142.0" text="Call us at 09191818" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="210.0" layoutY="302.0" prefHeight="177.0" prefWidth="223.0" style="-fx-background-color: #f1f3f6; -fx-border-color: orange;">
+                           <children>
+                              <Label layoutX="11.0" layoutY="6.0" text="Welcome to Ethio-Food delivey" textFill="#0a76f7" underline="true">
+                                 <font>
+                                    <Font name="Arial Rounded MT Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutY="29.0" prefHeight="14.0" prefWidth="226.0" text="&gt; If you order Margherita Sandwich" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="36.0" layoutY="43.0" text="Price 400 birr" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="1.0" layoutY="57.0" prefHeight="17.0" prefWidth="224.0" text="&gt; If you order 2 or more Club Sandwich" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="47.0" layoutY="76.0" text="20 % discount" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="36.0" layoutY="97.0" prefHeight="14.0" prefWidth="105.0" text="&gt; Delivery Fee" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="57.0" layoutY="111.0" prefHeight="14.0" prefWidth="105.0" text="60 birr" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="17.0" layoutY="125.0" text="&gt; For further info " textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="27.0" layoutY="135.0" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="30.0" layoutY="142.0" text="Call us at 09191818" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="675.0" layoutY="67.0" prefHeight="171.0" prefWidth="223.0" style="-fx-background-color: #f1f3f6; -fx-border-color: orange;">
+                           <children>
+                              <Label layoutX="11.0" layoutY="6.0" text="Welcome to Ethio-Food delivey" textFill="#0a76f7" underline="true">
+                                 <font>
+                                    <Font name="Arial Rounded MT Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutY="29.0" prefHeight="14.0" prefWidth="226.0" text="&gt; If you order Turkey Sandwich" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="36.0" layoutY="43.0" text="Price 500 birr" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="-2.0" layoutY="57.0" prefHeight="17.0" prefWidth="230.0" text="&gt; If you order 2 or more Turkey Sandwich" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="10.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="47.0" layoutY="76.0" text="20 % discount" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="36.0" layoutY="97.0" prefHeight="14.0" prefWidth="105.0" text="&gt; Delivery Fee" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="57.0" layoutY="111.0" prefHeight="14.0" prefWidth="105.0" text="60 birr" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="17.0" layoutY="125.0" text="&gt; For further info " textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="27.0" layoutY="135.0" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="30.0" layoutY="142.0" text="Call us at 09191818" textFill="#051a31">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <ImageView fitHeight="33.0" fitWidth="31.0" onMouseClicked="#MouseOnClickedBackward" pickOnBounds="true" preserveRatio="true" rotate="-177.1">
+                           <image>
+                              <Image url="@softdrinks/iIcons/backward.png" />
+                           </image>
+                        </ImageView>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Other">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Foods/EnkulalFirfir.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="133.0" fitWidth="177.0" layoutX="14.0" layoutY="338.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Foods/Firfir.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="490.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Foods/shiro.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="133.0" fitWidth="176.0" layoutX="480.0" layoutY="337.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Foods/shiro1.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="14.0" layoutY="64.0" text="Enkulal Firfir" textFill="#0d7eb3">
+                           <font>
+                              <Font name="Mongolian Baiti" size="23.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="313.0" text="Firfir" textFill="#0d7eb3">
+                           <font>
+                              <Font name="Mongolian Baiti" size="23.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="490.0" layoutY="64.0" text="Shiro" textFill="#0d7eb3">
+                           <font>
+                              <Font name="Mongolian Baiti" size="23.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="478.0" layoutY="313.0" text="Tegabino" textFill="#0d7eb3">
+                           <font>
+                              <Font name="Mongolian Baiti" size="23.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="13.0" layoutY="240.0" mnemonicParsing="false" onAction="#Payment" prefHeight="40.0" prefWidth="153.0" style="-fx-background-color: orange;" text="Order Now" textFill="#0b81ff">
+                           <font>
+                              <Font name="Bauhaus 93" size="22.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="488.0" layoutY="240.0" mnemonicParsing="false" onAction="#Payment" prefHeight="40.0" prefWidth="153.0" style="-fx-background-color: orange;" text="Order Now" textFill="#0b81ff">
+                           <font>
+                              <Font name="Bauhaus 93" size="22.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="479.0" layoutY="455.0" mnemonicParsing="false" onAction="#Payment" prefHeight="40.0" prefWidth="177.0" style="-fx-background-color: orange;" text="Order Now" textFill="#0b81ff">
+                           <font>
+                              <Font name="Bauhaus 93" size="22.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="13.0" layoutY="455.0" mnemonicParsing="false" onAction="#Payment" prefHeight="40.0" prefWidth="177.0" style="-fx-background-color: orange;" text="Order Now" textFill="#0b81ff">
+                           <font>
+                              <Font name="Bauhaus 93" size="22.0" />
+                           </font>
+                        </Button>
+                        <Circle fill="#fcfcfd" layoutX="248.0" layoutY="174.0" radius="75.0" stroke="#eb9809" strokeType="INSIDE" />
+                        <Label layoutX="213.0" layoutY="125.0" text="Price" textFill="#0d7eb3">
+                           <font>
+                              <Font name="Mongolian Baiti" size="23.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="213.0" layoutY="161.0" text="100 birr" textFill="#0d7eb3">
+                           <font>
+                              <Font name="Mongolian Baiti" size="23.0" />
+                           </font>
+                        </Label>
+                        <Circle fill="#fcfcfd" layoutX="275.0" layoutY="412.0" radius="79.0" stroke="#eb9809" strokeType="INSIDE" />
+                        <Label layoutX="236.0" layoutY="371.0" text="Price" textFill="#0d7eb3">
+                           <font>
+                              <Font name="Mongolian Baiti" size="23.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="230.0" layoutY="405.0" text="100 birr" textFill="#0d7eb3">
+                           <font>
+                              <Font name="Mongolian Baiti" size="23.0" />
+                           </font>
+                        </Label>
+                        <Circle fill="#fcfcfd" layoutX="731.0" layoutY="161.0" radius="75.0" stroke="#eb9809" strokeType="INSIDE" />
+                        <Circle fill="#fcfcfd" layoutX="746.0" layoutY="411.0" radius="75.0" stroke="#eb9809" strokeType="INSIDE" />
+                        <Label layoutX="698.0" layoutY="125.0" text="Price" textFill="#0d7eb3">
+                           <font>
+                              <Font name="Mongolian Baiti" size="23.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="694.0" layoutY="161.0" text="100 birr" textFill="#0d7eb3">
+                           <font>
+                              <Font name="Mongolian Baiti" size="23.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="721.0" layoutY="371.0" text="Price" textFill="#0d7eb3">
+                           <font>
+                              <Font name="Mongolian Baiti" size="23.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="709.0" layoutY="398.0" text="100 birr" textFill="#0d7eb3">
+                           <font>
+                              <Font name="Mongolian Baiti" size="23.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="33.0" fitWidth="31.0" onMouseClicked="#MouseOnClickedBackward" pickOnBounds="true" preserveRatio="true" rotate="174.7">
+                           <image>
+                              <Image url="@softdrinks/iIcons/backward.png" />
+                           </image>
+                        </ImageView>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</StackPane>

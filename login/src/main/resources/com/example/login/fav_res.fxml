@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #f1f3f6;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login.Fav_Res">
+   <children>
+      <ImageView fitHeight="127.0" fitWidth="230.0" layoutX="26.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@res.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="137.0" fitWidth="212.0" layoutX="517.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@bonali.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="130.0" fitWidth="230.0" layoutX="26.0" layoutY="358.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@mafi.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="137.0" fitWidth="212.0" layoutX="517.0" layoutY="361.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@kebeki.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="26.0" layoutY="261.0" mnemonicParsing="false" onAction="#dish" prefHeight="41.0" prefWidth="230.0" style="-fx-background-color: orange;" text="Markonal Restaurant">
+         <font>
+            <Font name="Constantia Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Glow />
+         </effect>
+      </Button>
+      <Separator layoutX="483.0" layoutY="149.0" opacity="0.29" orientation="VERTICAL" prefHeight="155.0" prefWidth="6.0" style="-fx-background-color: black;" />
+      <Pane layoutX="256.0" layoutY="148.0" prefHeight="155.0" prefWidth="230.0" style="-fx-background-color: #f1f3f6; -fx-border-color: orange;">
+         <children>
+            <Label layoutX="3.0" layoutY="-7.0" prefHeight="32.0" prefWidth="230.0" text="MARKONAL RESTAURANT" textFill="#0391ff" underline="true">
+               <font>
+                  <Font name="Bell MT Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="25.0" prefHeight="17.0" prefWidth="199.0" text="The Restaurant offers many services " />
+            <Label layoutX="14.0" layoutY="52.0" prefHeight="17.0" prefWidth="212.0" text="1.The main service they provide is cooking " />
+            <Label layoutX="16.0" layoutY="69.0" text="an amazing dishes for the community" />
+            <Label layoutX="15.0" layoutY="86.0" text="2. They also deliver their products via" />
+            <Label layoutX="29.0" layoutY="103.0" text="SMS,Phone and using this App" />
+         </children>
+      </Pane>
+      <Pane layoutX="256.0" layoutY="356.0" prefHeight="161.0" prefWidth="230.0" style="-fx-background-color: #f1f3f6; -fx-border-color: orange;">
+         <children>
+            <Label layoutX="26.0" layoutY="4.0" text="MAFI RESTAURANT" textFill="#0391ff" underline="true">
+               <font>
+                  <Font name="Bell MT Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="25.0" text="The Restaurant offers many services " />
+            <Label layoutX="14.0" layoutY="52.0" prefHeight="17.0" prefWidth="212.0" text="1.The main service they provide is cooking " />
+            <Label layoutX="16.0" layoutY="69.0" text="an amazing dishes for the community" />
+            <Label layoutX="15.0" layoutY="86.0" text="2. They also deliver their products via" />
+            <Label layoutX="29.0" layoutY="103.0" text="SMS,Phone and using this App" />
+         </children>
+      </Pane>
+      <Pane layoutX="729.0" layoutY="145.0" prefHeight="155.0" prefWidth="230.0" style="-fx-background-color: #f1f3f6; -fx-border-color: orange;">
+         <children>
+            <Label layoutX="15.0" layoutY="4.0" text="BONALI RESTAURANT" textFill="#0391ff" underline="true">
+               <font>
+                  <Font name="Bell MT Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="25.0" text="The Restaurant offers many services " />
+            <Label layoutX="14.0" layoutY="52.0" prefHeight="17.0" prefWidth="212.0" text="1.The main service they provide is cooking " />
+            <Label layoutX="16.0" layoutY="69.0" text="an amazing dishes for the community" />
+            <Label layoutX="15.0" layoutY="86.0" text="2. They also deliver their products via" />
+            <Label layoutX="29.0" layoutY="103.0" text="SMS,Phone and using this App" />
+         </children>
+      </Pane>
+      <Pane layoutX="725.0" layoutY="361.0" prefHeight="155.0" prefWidth="238.0" style="-fx-background-color: #f1f3f6; -fx-border-color: orange;">
+         <children>
+            <Label layoutX="3.0" layoutY="4.0" text="KEBEKI BAR &amp; RESTAURANT" textFill="#0391ff" underline="true">
+               <font>
+                  <Font name="Bell MT Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="25.0" text="The Restaurant offers many services " underline="true" />
+            <Label layoutX="14.0" layoutY="52.0" prefHeight="17.0" prefWidth="212.0" text="1.The main service they provide is cooking " />
+            <Label layoutX="16.0" layoutY="69.0" text="an amazing dishes for the community" />
+            <Label layoutX="15.0" layoutY="86.0" text="2. They also deliver their products via" />
+            <Label layoutX="29.0" layoutY="103.0" text="SMS,Phone and using this App" />
+         </children>
+      </Pane>
+      <Separator layoutX="483.0" layoutY="358.0" opacity="0.29" orientation="VERTICAL" prefHeight="161.0" prefWidth="6.0" style="-fx-background-color: black;" />
+      <Separator layoutX="962.0" layoutY="359.0" opacity="0.29" orientation="VERTICAL" prefHeight="155.0" prefWidth="6.0" style="-fx-background-color: black;" />
+      <Label layoutX="184.0" layoutY="58.0" prefHeight="54.0" prefWidth="598.0" style="-fx-background-color: #f1f3f6;" text=" WELCOME TO  OUR COLLECTION OF RESTAURANTS !" textFill="#0996f4">
+         <font>
+            <Font name="Magneto Bold" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <ImageView fitHeight="41.0" fitWidth="37.0" layoutX="8.0" layoutY="1.0" onMouseClicked="#MouseOnClickedBackward" pickOnBounds="true" preserveRatio="true" rotate="178.0">
+         <image>
+            <Image url="@softdrinks/iIcons/Forward.png" />
+         </image>
+         <effect>
+            <Glow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Button layoutX="517.0" layoutY="261.0" mnemonicParsing="false" onAction="#dish" prefHeight="41.0" prefWidth="212.0" style="-fx-background-color: orange;" text="Bonali Restaurants">
+         <font>
+            <Font name="Constantia Bold" size="19.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Glow />
+         </effect>
+      </Button>
+      <Button layoutX="26.0" layoutY="478.0" mnemonicParsing="false" onAction="#dish" prefHeight="26.0" prefWidth="230.0" style="-fx-background-color: orange;" text="Mafi Restaurant">
+         <font>
+            <Font name="Constantia Bold" size="21.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Glow />
+         </effect>
+      </Button>
+      <Button layoutX="520.0" layoutY="478.0" mnemonicParsing="false" onAction="#dish" prefHeight="40.0" prefWidth="206.0" style="-fx-background-color: orange;" text="Kebeki Restaurant">
+         <font>
+            <Font name="Constantia Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Glow />
+         </effect>
+      </Button>
+      <Separator layoutX="959.0" layoutY="145.0" opacity="0.29" orientation="VERTICAL" prefHeight="155.0" prefWidth="6.0" style="-fx-background-color: black;" />
+      <Line endX="938.0" endY="1.1444091796875E-5" layoutX="62.0" layoutY="58.0" startX="-86.5000228881836" startY="1.1444091796875E-5" />
+   </children>
+</AnchorPane>
